@@ -2,26 +2,29 @@ var container = document.querySelector("#container");
 var description = document.querySelector("#description");
 var saveBtn = document.getElementById("saveBtn");
 
-
+var storage = {};
 
 saveBtn.addEventListener("click", function(event){
-   event.preventDefault();
-   console.log(localStorage);
-   var descriptionObject = {
-       eventDes: description,
-   }
+   var button = event.target;
+   var parent = button.closest("div.row");
 
-   localStorage.setItem("description", JSON.stringify(descriptionObject));
-   renderDes();
+   var id = parent.id;
+   var textContent = parent.querySelector("textarea").value;
+
+   storage[id] =  textContent;
+
+   localStorage.setItem("storage", JSON.stringify(storage));
+   
 });
 
 
-function renderDes(){
-    var x = JSON.parse(localStorage.getItem("description"));
-    if(x !== null){
-        document.querySelector(".description").textContent = "";
-    }
-}
+
+// function renderDes(){
+//     var x = JSON.parse(localStorage.getItem("description"));
+//     if(x !== null){
+//         document.querySelector(".description").textContent = x.eventDes;
+//     }
+// }
 
 
 
