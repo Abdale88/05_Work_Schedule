@@ -1,30 +1,38 @@
 var container = document.querySelector("#container");
 var description = document.querySelector("#description");
-var saveBtn = document.getElementById("saveBtn");
+// var saveBtn = document.querySelector("saveBtn");
 
 var storage = {};
 
-saveBtn.addEventListener("click", function(event){
-   var button = event.target;
-   var parent = button.closest("div.row");
 
-   var id = parent.id;
-   var textContent = parent.querySelector("textarea").value;
+document.querySelectorAll('.saveBtn').forEach(item => {
+    item.addEventListener('click', event => {
+        var button = event.target;
+        var parent = button.closest("div.row");
 
-   storage[id] =  textContent;
+        var id = parent.id;
+        var textContent = parent.querySelector("textarea").value;
 
-   localStorage.setItem("storage", JSON.stringify(storage));
-   
-});
+        storage[id] =  textContent;
 
+        localStorage.setItem("storage", JSON.stringify(storage)); 
+    });
+})
 
+document.querySelectorAll('.saveBtn').forEach(item => {
+    item.addEventListener('click', event => {
+        var button = event.target;
+        var parent = button.closest("div.row");
 
-// function renderDes(){
-//     var x = JSON.parse(localStorage.getItem("description"));
-//     if(x !== null){
-//         document.querySelector(".description").textContent = x.eventDes;
-//     }
-// }
+        var id = parent.id;
+        var textContent = parent.querySelector("textarea").value;
+
+        storage[id] =  textContent;
+
+        var getEl = JSON.parse(localStorage.getItem("storage")); 
+    });
+})
+
 
 
 
