@@ -1,28 +1,25 @@
 var container = document.querySelector("#container");
 var description = document.querySelector("#description");
-
+var saveBtn = document.getElementById("saveBtn");
 
 var storage = {};
 
 
-document.querySelectorAll('.saveBtn').forEach(item => {
-    item.addEventListener('click', event => {
+
+    saveBtn.addEventListener('click', function(event) {
         var button = event.target;
         var parent = button.closest("div.row");
 
         var id = parent.id;
-        console.log("this >> " + id.value);
         var textContent = parent.querySelector("textarea").value;
-        storage[id] =  textContent; 
+
+        storage[id] =  textContent;
 
         localStorage.setItem("storage", JSON.stringify(storage)); 
-
     });
-})
 
 
 
-        var getEl = JSON.parse(localStorage.getItem("storage")); 
 
 
 // var time = dayjs().format('h A');
