@@ -14,12 +14,20 @@ var storage = {};
         var textContent = parent.querySelector("textarea").value;
 
         storage[id] =  textContent;
+        console.log("storage[id]>> " + storage[id]);
 
         localStorage.setItem("storage", JSON.stringify(storage)); 
+
+        var item = storage[id];
+         document.getElementById("myTextarea").value = item;   
+         
+       
     });
+   
 
-
-
+    // function myFunction() {
+    //     document.getElementById("myTextarea").value = "Fifth Avenue, New York City";
+    //   }
 
 
 // var time = dayjs().format('h A');
