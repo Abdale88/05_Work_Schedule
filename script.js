@@ -21,6 +21,8 @@ var storage3hr = "";
 var storage4hr = "";
 var storage5hr = "";
 
+$('#currentDay').text(dayjs().format('dddd MMMM Do, YYYY'));
+
 saveBtn.addEventListener('click', function(event) {
     event.preventDefault();
     var button = event.target;
@@ -185,4 +187,3 @@ saveBtn.addEventListener('click', function(event) {
 // $('.hour').text(time);
 
 
-$('#currentDay').text(dayjs().format('MMM Do, YYYY'));
