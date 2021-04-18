@@ -1,33 +1,19 @@
 var container = document.querySelector("#container");
 var description = document.querySelector("#description");
+
 var saveBtn = document.getElementById("saveBtn");
+var saveBtn10am = document.getElementById("saveBtn-10am");
+var saveBtn10am = document.getElementById("saveBtn-11am");
+var saveBtn10am = document.getElementById("saveBtn-12hr");
+var saveBtn10am = document.getElementById("saveBtn-1hr");
+var saveBtn10am = document.getElementById("saveBtn-2hr");
+var saveBtn10am = document.getElementById("saveBtn-3hr");
+var saveBtn10am = document.getElementById("saveBtn-4hr");
+var saveBtn10am = document.getElementById("saveBtn-4hr");
 
-var storage = {};
+ 
 
 
-
-    saveBtn.addEventListener('click', function(event) {
-        var button = event.target;
-        var parent = button.closest("div.row");
-
-        var id = parent.id;
-        var textContent = parent.querySelector("textarea").value;
-
-        storage[id] =  textContent;
-        console.log("storage[id]>> " + storage[id]);
-
-        localStorage.setItem("storage", JSON.stringify(storage)); 
-
-        var item = storage[id];
-         document.getElementById("myTextarea").value = item;   
-         
-       
-    });
-   
-
-    // function myFunction() {
-    //     document.getElementById("myTextarea").value = "Fifth Avenue, New York City";
-    //   }
 
 
 // var time = dayjs().format('h A');
