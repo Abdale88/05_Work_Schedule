@@ -175,16 +175,6 @@ function hour5(){
     $(timeElHr5).text(time);
   }}
   
- 
-  hour9();
-  hour10();
-  hour11();
-  hour12();
-  hour1();
-  hour2();
-  hour3();
-  hour4();
-  hour5();
 
 saveBtn.addEventListener('click', function(event) {
     event.preventDefault();
@@ -346,17 +336,12 @@ saveBtn.addEventListener('click', function(event) {
       
       document.getElementById("5hr-Textarea").value = localStorage.getItem("storage5hr");
 
-
-
-    //   console.log("this is time>> " + time[1])
-    //   console.log("this is timeEl>> " + timeEl.textContent[0])
-    //    if((time[0]) > (timeEl.textContent[0])){
-    //      document.getElementById("hr-9").setAttribute("style", "background-color: #d3d3d3;");
-    //   }
-    //   else if((time[0]) < (timeEl.textContent[0])){
-    //      document.getElementById("hr-9").setAttribute("style", "background-color: #77dd77;");
-    //   }
-    //  else{
-    //      document.getElementById("hr-9").setAttribute("style", "background-color: #ff6961;");
-    //      $(timeEl).text(time);
-    //  }
+      hour9();
+      hour10();
+      hour11();
+      hour12();
+      hour1();
+      hour2();
+      hour3();
+      hour4();
+      hour5();
