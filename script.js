@@ -11,6 +11,16 @@ var saveBtn10am = document.getElementById("saveBtn-3hr");
 var saveBtn10am = document.getElementById("saveBtn-4hr");
 var saveBtn10am = document.getElementById("saveBtn-4hr");
 
+var storage = "";
+var storage10am = "";
+var storage11hr = "";
+var storage12hr = "";
+var storage1hr = "";
+var storage2hr = "";
+var storage3hr = "";
+var storage4hr = "";
+var storage5hr = "";
+
  
 
 
