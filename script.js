@@ -38,7 +38,153 @@ $('#currentDay').text(dayjs().format('dddd MMMM Do, YYYY'));
 
 
 
+ var now = new Date(),
+  hours = now.getHours();
+ var minutes = now.getMinutes();
+//These function will display the correct time and color
+function hour9(){
+    if(hours > timeElHr9.textContent) {
+        document.getElementById("hr-9").setAttribute("style", "background-color: #d3d3d3;");
+        $(timeElHr9).text("9 AM");
+      }
+      else if(hours < timeElHr9.textContent) {
+        document.getElementById("hr-9").setAttribute("style", "background-color: #77dd77;");
+        $(timeElHr9).text("9 AM");
+      }
+      else {
+        document.getElementById("hr-9").setAttribute("style", "background-color: #ff6961;"); 
+        $(timeElHr9).text(time);
+      }
+}
+function hour10(){
+    if(hours > timeElHr10.textContent) {
+        document.getElementById("hr-10").setAttribute("style", "background-color: #d3d3d3;");
+        $(timeElHr10).text("10 AM");
+      }
+      else if(hours < timeElHr10.textContent) {
+        document.getElementById("hr-10").setAttribute("style", "background-color: #77dd77;");
+        $(timeElHr10).text("10 AM");
+      }
+      else {
+        document.getElementById("hr-10").setAttribute("style", "background-color: #ff6961;"); 
+        $(timeElHr10).text(time);
+      }
+}
 
+function hour11(){
+    if(hours > timeElHr11.textContent) {
+        document.getElementById("hr-11").setAttribute("style", "background-color: #d3d3d3;");
+        $(timeElHr11).text("11 AM");
+      }
+      else if(hours < timeElHr11.textContent) {
+        document.getElementById("hr-11").setAttribute("style", "background-color: #77dd77;");
+        $(timeElHr11).text("11 AM");
+      }
+      else {
+        document.getElementById("hr-11").setAttribute("style", "background-color: #ff6961;"); 
+        $(timeElHr11).text(time);
+      }
+}
+ 
+function hour12(){
+    if(hours > timeElHr12.textContent) {
+        document.getElementById("hr-12").setAttribute("style", "background-color: #d3d3d3;");
+        $(timeElHr12).text("12 PM");
+      }
+      else if(hours < timeElHr12.textContent) {
+        document.getElementById("hr-12").setAttribute("style", "background-color: #77dd77;");
+        $(timeElHr12).text("12 PM");
+      }
+      else {
+        document.getElementById("hr-12").setAttribute("style", "background-color: #ff6961;"); 
+        $(timeElHr12).text(time);
+      }
+}
+
+function hour1(){
+    if(hours > timeElHr1.textContent) {
+        document.getElementById("hr-1").setAttribute("style", "background-color: #d3d3d3;");
+        $(timeElHr1).text("1 PM");
+      }
+      else if(hours < timeElHr1.textContent) {
+        document.getElementById("hr-1").setAttribute("style", "background-color: #77dd77;");
+        $(timeElHr1).text("1 PM");
+      }
+      else {
+        document.getElementById("hr-1").setAttribute("style", "background-color: #ff6961;"); 
+        $(timeElHr1).text(time);
+      }
+}
+
+function hour2(){
+    if(hours > timeElHr2.textContent) {
+        document.getElementById("hr-2").setAttribute("style", "background-color: #d3d3d3;");
+        $(timeElHr2).text("2 PM");
+      }
+      else if(hours < timeElHr2.textContent) {
+        document.getElementById("hr-2").setAttribute("style", "background-color: #77dd77;");
+        $(timeElHr2).text("2 PM");
+      }
+      else {
+        document.getElementById("hr-2").setAttribute("style", "background-color: #ff6961;"); 
+        $(timeElHr2).text(time);
+      }
+}
+
+function hour3(){
+    if(hours > timeElHr3.textContent) {
+        document.getElementById("hr-3").setAttribute("style", "background-color: #d3d3d3;");
+        $(timeElHr3).text("3 PM");
+      }
+      else if(hours < timeElHr3.textContent) {
+        document.getElementById("hr-3").setAttribute("style", "background-color: #77dd77;");
+        $(timeElHr3).text("3 PM");
+      }
+      else {
+        document.getElementById("hr-3").setAttribute("style", "background-color: #ff6961;"); 
+        $(timeElHr3).text(time);
+      }
+}
+
+function hour4(){
+    if(hours > timeElHr4.textContent) {
+        document.getElementById("hr-4").setAttribute("style", "background-color: #d3d3d3;");
+        $(timeElHr4).text("4 PM");
+      }
+      else if(hours < timeElHr4.textContent) {
+        document.getElementById("hr-4").setAttribute("style", "background-color: #77dd77;");
+        $(timeElHr4).text("4 PM");
+      }
+      else {
+        document.getElementById("hr-4").setAttribute("style", "background-color: #ff6961;"); 
+        $(timeElHr4).text(time);
+      }
+}
+//=================
+function hour5(){
+    if(hours > timeElHr5.textContent) {
+    document.getElementById("hr-5").setAttribute("style", "background-color: #d3d3d3;");
+    $(timeElHr5).text("5 PM");
+  }
+  else if(hours < timeElHr5.textContent) {
+    document.getElementById("hr-5").setAttribute("style", "background-color: #77dd77;");
+    $(timeElHr5).text("5 PM");
+  }
+  else {
+    document.getElementById("hr-5").setAttribute("style", "background-color: #ff6961;"); 
+    $(timeElHr5).text(time);
+  }}
+  
+ 
+  hour9();
+  hour10();
+  hour11();
+  hour12();
+  hour1();
+  hour2();
+  hour3();
+  hour4();
+  hour5();
 
 saveBtn.addEventListener('click', function(event) {
     event.preventDefault();
