@@ -21,6 +21,23 @@ var storage3hr = "";
 var storage4hr = "";
 var storage5hr = "";
 
+saveBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    var button = event.target;
+    var parent = button.closest("div.row");
+    var id = parent.id;
+    var textEl = parent.querySelector("textarea").value;
+  
+    storage =  textEl;
+    
+    localStorage.setItem("storage", storage); 
+   
+  
+  });
+  
+  document.getElementById("myTextarea").value = localStorage.getItem("storage");  
+//================================
+
  
 
 
