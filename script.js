@@ -38,7 +38,21 @@ saveBtn.addEventListener('click', function(event) {
   document.getElementById("myTextarea").value = localStorage.getItem("storage");  
 //================================
 
- 
+  saveBtn10am.addEventListener('click', function(event) {
+    event.preventDefault();
+    var button = event.target;
+    var parent = button.closest("div.row");
+    var id = parent.id;
+    var textEl = parent.querySelector("textarea").value;
+  
+    storage10am =  textEl;
+    
+    localStorage.setItem("storage10am", storage10am); 
+   
+  
+  });
+  
+  document.getElementById("10am-Textarea").value = localStorage.getItem("storage10am"); 
 
 
 
