@@ -1,6 +1,16 @@
 var container = document.querySelector("#container");
 var description = document.querySelector("#description");
 
+var timeElHr9 = document.querySelector("#hour9");
+var timeElHr10 = document.querySelector("#hour10");
+var timeElHr11 = document.querySelector("#hour11");
+var timeElHr12 = document.querySelector("#hour12");
+var timeElHr1 = document.querySelector("#hour1");
+var timeElHr2 = document.querySelector("#hour2");
+var timeElHr3 = document.querySelector("#hour3");
+var timeElHr4 = document.querySelector("#hour4");
+var timeElHr5 = document.querySelector("#hour5")
+
 var saveBtn = document.getElementById("saveBtn");
 var saveBtn10am = document.getElementById("saveBtn-10am");
 var saveBtn11hr = document.getElementById("saveBtn-11hr");
@@ -20,8 +30,15 @@ var storage2hr = "";
 var storage3hr = "";
 var storage4hr = "";
 var storage5hr = "";
+var isCurrent = true;
 
 $('#currentDay').text(dayjs().format('dddd MMMM Do, YYYY'));
+
+ var time = dayjs().format('h A');
+
+
+
+
 
 saveBtn.addEventListener('click', function(event) {
     event.preventDefault();
@@ -183,7 +200,17 @@ saveBtn.addEventListener('click', function(event) {
       
       document.getElementById("5hr-Textarea").value = localStorage.getItem("storage5hr");
 
-// var time = dayjs().format('h A');
-// $('.hour').text(time);
 
 
+    //   console.log("this is time>> " + time[1])
+    //   console.log("this is timeEl>> " + timeEl.textContent[0])
+    //    if((time[0]) > (timeEl.textContent[0])){
+    //      document.getElementById("hr-9").setAttribute("style", "background-color: #d3d3d3;");
+    //   }
+    //   else if((time[0]) < (timeEl.textContent[0])){
+    //      document.getElementById("hr-9").setAttribute("style", "background-color: #77dd77;");
+    //   }
+    //  else{
+    //      document.getElementById("hr-9").setAttribute("style", "background-color: #ff6961;");
+    //      $(timeEl).text(time);
+    //  }
