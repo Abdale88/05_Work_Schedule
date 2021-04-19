@@ -3,5 +3,5 @@ This is a work schedule daily planner. This daily planner was create to help you
 
 #### Enjoy our daily planner schedule organizer!!
 
-#### click the animation to see how this project works 
-(file:///Users/appleowner/git/homeworks/05_Work_Schedule/image/05-third-party-apis-homework-demo.gif)
+#### check the link to see the animation of how this project works 
+file:///Users/appleowner/git/homeworks/05_Work_Schedule/image/05-third-party-apis-homework-demo.gif
