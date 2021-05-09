@@ -15,3 +15,7 @@ This is a work schedule daily planner. This daily planner was create to help you
 ### Link of this app
 https://abdale88.github.io/05_Work_Schedule/
 
+## ## license and copyright
+
+![ licence](./image/licenses)
+
